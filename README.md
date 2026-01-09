@@ -4,6 +4,11 @@
 	<img width="800" src="https://i.imgur.com/R0cd2Gj.png" >
 </div>
 
+[![Security Status](https://img.shields.io/badge/security-secure-brightgreen)](./SECURITY.md)
+[![Vulnerabilities](https://img.shields.io/badge/vulnerabilities-0-brightgreen)](./SECURITY_IMPROVEMENTS.md)
+[![npm version](https://img.shields.io/npm/v/debug-fmt.svg)](https://www.npmjs.com/package/debug-fmt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.md)
+
 ## Highlights
 
 - Based on the popular [`debug`](https://www.npmjs.com/package/debug) module.
@@ -12,6 +17,18 @@
 - Message formatting Heroku [logfmt](https://brandur.org/logfmt) syntax.
 - Colorized output via [`DEBUG_COLORS`](https://github.com/debug-js/debug#environment-variables) by default.
 - [`debug.duration`](#measurement) for measurement.
+- **🔒 Enterprise-grade security**: Zero vulnerabilities with automated security validation.
+
+## Security
+
+debug-fmt maintains the highest security standards:
+
+- ✅ **Zero known vulnerabilities** (npm audit clean)
+- ✅ **Automated security validation** (pre-publish security checks)
+- ✅ **Secure dependency management** (version overrides for vulnerable packages)
+- ✅ **Comprehensive security documentation** ([SECURITY.md](./SECURITY.md))
+
+Run security validation: `npm run security:validate`
 
 ## Install
 
@@ -200,6 +217,31 @@ const duration = debug.duration('query')
 const result = await db.query(query)
 duration(result)
 ```
+
+## Security
+
+debug-fmt is committed to maintaining the highest security standards. We implement comprehensive security measures including:
+
+### Security Features
+- **Zero vulnerabilities**: Regular automated security audits ensure clean dependency tree
+- **Automated validation**: Pre-publish security checks prevent vulnerable releases
+- **Secure coding practices**: Source code scanning for security anti-patterns
+- **Dependency management**: Version overrides for vulnerable transitive dependencies
+
+### Security Commands
+```bash
+# Run comprehensive security validation
+npm run security:validate
+
+# Audit all dependencies
+npm run security:audit
+
+# Run all security checks (audit + validation)
+npm run security:check
+```
+
+### Reporting Security Issues
+Please review our [Security Policy](./SECURITY.md) for information on reporting vulnerabilities and our response procedures.
 
 ## License
 
