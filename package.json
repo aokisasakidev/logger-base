@@ -2,7 +2,7 @@
   "name": "logger-base",
   "description": "debug module using logfmt format",
   "homepage": "https://github.com/aokisasakidev/logger-base",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "types": "./src/index.d.ts",
   "main": "src/index.js",
   "exports": {
