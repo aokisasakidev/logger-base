@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2024-01-01
 
 ### Added
-- Initial release of debug-fmt
+- Initial release of logger-base
 - Debug module using logfmt format
 - TypeScript definitions
 - Encode functionality
@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - @kikobeats/time-span: ~1.0.5
 - null-prototype-object: ~1.2.2
 - pretty-ms: ~7.0.1
-- debug-glitz: ^1.0.0
+- dev-log-core: ^1.0.0
 
-[Unreleased]: https://github.com/alphacointech1010/debug-fmt/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/alphacointech1010/debug-fmt/releases/tag/v1.0.0
+[Unreleased]: https://github.com/alphacointech1010/logger-base/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/alphacointech1010/logger-base/releases/tag/v1.0.0

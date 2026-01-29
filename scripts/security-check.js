@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Security validation script for debug-fmt
+ * Security validation script for logger-base
  * Performs additional security checks beyond npm audit and snyk
  */
 

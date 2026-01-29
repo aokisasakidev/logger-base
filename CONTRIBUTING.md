@@ -1,6 +1,6 @@
-# Contributing to debug-fmt
+# Contributing to logger-base
 
-Thank you for your interest in contributing to debug-fmt! We welcome contributions from the community.
+Thank you for your interest in contributing to logger-base! We welcome contributions from the community.
 
 ## Code of Conduct
 
@@ -9,7 +9,7 @@ By participating in this project, you agree to abide by our code of conduct. Ple
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/debug-fmt.git`
+2. Clone your fork: `git clone https://github.com/your-username/logger-base.git`
 3. Install dependencies: `npm install`
 4. Create a feature branch: `git checkout -b feature/your-feature-name`
 
@@ -91,7 +91,7 @@ Please include:
 When reporting issues, please include:
 
 - Node.js version
-- debug-fmt version
+- logger-base version
 - Operating system
 - Minimal reproduction case
 - Expected vs actual behavior

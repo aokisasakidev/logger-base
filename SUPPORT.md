@@ -1,6 +1,6 @@
 # Support
 
-Thank you for using debug-fmt! This document provides information on how to get help and support.
+Thank you for using logger-base! This document provides information on how to get help and support.
 
 ## Getting Help
 
@@ -13,17 +13,17 @@ Thank you for using debug-fmt! This document provides information on how to get 
 ### Community Support
 
 1. **GitHub Issues**: For bugs, feature requests, and general questions
-   - [Open an issue](https://github.com/alphacointech1010/debug-fmt/issues/new)
+   - [Open an issue](https://github.com/alphacointech1010/logger-base/issues/new)
    - Search existing issues first to avoid duplicates
 
 2. **GitHub Discussions**: For community discussions and Q&A
-   - [Start a discussion](https://github.com/alphacointech1010/debug-fmt/discussions)
+   - [Start a discussion](https://github.com/alphacointech1010/logger-base/discussions)
 
 ### Before Asking for Help
 
 Please provide the following information:
 
-- **Version**: Which version of debug-fmt are you using?
+- **Version**: Which version of logger-base are you using?
 - **Environment**: Node.js version, operating system
 - **Code**: Minimal reproduction case
 - **Error**: Full error message and stack trace
@@ -99,8 +99,8 @@ We provide support for:
 
 ## Resources
 
-- [npm package](https://www.npmjs.com/package/debug-fmt)
-- [GitHub repository](https://github.com/alphacointech1010/debug-fmt)
-- [Issue tracker](https://github.com/alphacointech1010/debug-fmt/issues)
+- [npm package](https://www.npmjs.com/package/logger-base)
+- [GitHub repository](https://github.com/alphacointech1010/logger-base)
+- [Issue tracker](https://github.com/alphacointech1010/logger-base/issues)
 
-Thank you for using debug-fmt!
+Thank you for using logger-base!

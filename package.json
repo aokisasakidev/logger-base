@@ -1,7 +1,7 @@
 {
-  "name": "debug-fmt",
+  "name": "logger-base",
   "description": "debug module using logfmt format",
-  "homepage": "https://github.com/alphacointech1010/debug-fmt",
+  "homepage": "https://github.com/aokisasakidev/logger-base",
   "version": "1.0.2",
   "types": "./src/index.d.ts",
   "main": "src/index.js",
@@ -18,15 +18,15 @@
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
-    "url": "https://alphacointech1010.com"
+    "url": "https://aokisasakidev.com"
   },
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alphacointech1010/debug-fmt.git"
+    "url": "git+https://github.com/aokisasakidev/logger-base.git"
   },
   "bugs": {
-    "url": "https://github.com/alphacointech1010/debug-fmt/issues"
+    "url": "https://github.com/aokisasakidev/logger-base/issues"
   },
   "keywords": [
     "debug",
@@ -42,7 +42,7 @@
     "@kikobeats/time-span": "~1.0.5",
     "null-prototype-object": "~1.2.2",
     "pretty-ms": "~7.0.1",
-    "debug-glitz": "^1.0.3"
+    "dev-log-core": "^1.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",

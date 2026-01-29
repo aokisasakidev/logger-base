@@ -1,4 +1,4 @@
-# debug-fmt
+# logger-base
 
 <div align="center">
 	<img width="800" src="https://i.imgur.com/R0cd2Gj.png" >
@@ -6,7 +6,7 @@
 
 [![Security Status](https://img.shields.io/badge/security-secure-brightgreen)](./SECURITY.md)
 [![Vulnerabilities](https://img.shields.io/badge/vulnerabilities-0-brightgreen)](./SECURITY_IMPROVEMENTS.md)
-[![npm version](https://img.shields.io/npm/v/debug-fmt.svg)](https://www.npmjs.com/package/debug-fmt)
+[![npm version](https://img.shields.io/npm/v/logger-base.svg)](https://www.npmjs.com/package/logger-base)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.md)
 
 ## Highlights
@@ -21,7 +21,7 @@
 
 ## Security
 
-debug-fmt maintains the highest security standards:
+logger-base maintains the highest security standards:
 
 - ✅ **Zero known vulnerabilities** (npm audit clean)
 - ✅ **Automated security validation** (pre-publish security checks)
@@ -33,7 +33,7 @@ Run security validation: `npm run security:validate`
 ## Install
 
 ```bash
-$ npm install debug-fmt --save
+$ npm install logger-base --save
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ $ npm install debug-fmt --save
 Given a code like this one:
 
 ```js
-const debug = require('debug-fmt')('metascraper')
+const debug = require('logger-base')('metascraper')
 
 debug('retry', { url: 'https://kikobeats.com' })
 debug.info('done', { time: Date.now() })
@@ -52,7 +52,7 @@ debug.error('whoops', { message: 'expected `number`, got `NaN`' })
 ```
 
 You can:
-- Allow all the levels: `DEBUG=debug-fmt*`
+- Allow all the levels: `DEBUG=logger-base*`
 - Discard specific levels: `DEBUG="*,-metascraper:info*" node example.js`
 
 ### Measurement
@@ -62,7 +62,7 @@ Sometimes you need to log the duration of a function:
 ```js
 const { setTimeout } = require('timers/promises')
 
-const debug = require('debug-fmt')('metascraper')
+const debug = require('logger-base')('metascraper')
 
 const duration = debug.duration()
 
@@ -75,7 +75,7 @@ setTimeout(1100).then(() => duration.info('success'))
 You can customize the logger behavior with options:
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   // Custom log levels
   levels: ['info', 'warn', 'error', 'fatal'],
   
@@ -96,7 +96,7 @@ const debug = require('debug-fmt')('myapp', {
 #### Using Custom Encoding
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   encode: (obj) => {
     // Convert object to your preferred format
     return Object.entries(obj)
@@ -112,7 +112,7 @@ debug('user action', { userId: 123, action: 'login' })
 #### Custom Duration Format
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   durationFormat: (ms) => {
     if (ms < 1000) return `${ms}ms`
     if (ms < 60000) return `${(ms / 1000).toFixed(2)}s`
@@ -157,7 +157,7 @@ Default: The default logfmt encoder
 Custom encoding function for converting objects to logfmt format. The function receives an object and should return a logfmt-formatted string.
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   encode: (obj) => {
     // Custom encoding logic
     return Object.keys(obj).map(key => `${key}=${obj[key]}`).join(' ')
@@ -173,7 +173,7 @@ Default: `true` (unless `DEBUG_COLORS=false` in environment)
 Enable or disable colored output. When disabled, log messages will not include ANSI color codes.
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   colors: false
 })
 ```
@@ -186,7 +186,7 @@ Default: `pretty-ms` formatter
 Custom format function for duration formatting. The function receives a number (milliseconds) and should return a formatted string.
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   durationFormat: (ms) => {
     return `${ms}ms`
   }
@@ -201,7 +201,7 @@ Default: The default prefix formatter
 Custom prefix function for formatting log messages. The function receives the namespace (string) and color code (number), and should return a formatted prefix string.
 
 ```js
-const debug = require('debug-fmt')('myapp', {
+const debug = require('logger-base')('myapp', {
   prefix: (namespace, color) => {
     return `[${namespace}] `
   }
@@ -220,7 +220,7 @@ duration(result)
 
 ## Security
 
-debug-fmt is committed to maintaining the highest security standards. We implement comprehensive security measures including:
+logger-base is committed to maintaining the highest security standards. We implement comprehensive security measures including:
 
 ### Security Features
 - **Zero vulnerabilities**: Regular automated security audits ensure clean dependency tree
@@ -245,7 +245,7 @@ Please review our [Security Policy](./SECURITY.md) for information on reporting 
 
 ## License
 
-**debug-fmt** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/Kikobeats/debug-fmt/blob/master/LICENSE.md) License.<br>
-Authored and maintained by Kiko Beats with help from [contributors](https://github.com/Kikobeats/debug-fmt/contributors).
+**logger-base** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/Kikobeats/logger-base/blob/master/LICENSE.md) License.<br>
+Authored and maintained by Kiko Beats with help from [contributors](https://github.com/Kikobeats/logger-base/contributors).
 
 > [kikobeats.com](https://kikobeats.com) · GitHub [Kiko Beats](https://github.com/Kikobeats) · X [@Kikobeats](https://x.com/Kikobeats)

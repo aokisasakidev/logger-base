@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-We actively support the following versions of debug-fmt with security updates:
+We actively support the following versions of logger-base with security updates:
 
 | Version | Supported          | Security Status |
 | ------- | ------------------ | --------------- |
@@ -19,12 +19,12 @@ We actively support the following versions of debug-fmt with security updates:
 
 ## Reporting a Vulnerability
 
-We take security vulnerabilities seriously. If you discover a security vulnerability in debug-fmt, please report it responsibly.
+We take security vulnerabilities seriously. If you discover a security vulnerability in logger-base, please report it responsibly.
 
 ### How to Report
 
 1. **Email**: Send details to [josefrancisco.verdu@gmail.com](mailto:josefrancisco.verdu@gmail.com)
-2. **GitHub**: Create a private security advisory on our [GitHub repository](https://github.com/alphacointech1010/debug-fmt/security/advisories)
+2. **GitHub**: Create a private security advisory on our [GitHub repository](https://github.com/alphacointech1010/logger-base/security/advisories)
 
 ### What to Include
 
@@ -46,7 +46,7 @@ Please include the following information in your report:
 
 ### Automated Security Validation
 
-debug-fmt includes comprehensive security validation:
+logger-base includes comprehensive security validation:
 
 - **Pre-publish security checks**: Automated vulnerability scanning before package publication
 - **Source code validation**: Scans for security anti-patterns and debugging artifacts
@@ -62,7 +62,7 @@ debug-fmt includes comprehensive security validation:
 
 ### Security Best Practices
 
-When using debug-fmt:
+When using logger-base:
 
 - Keep dependencies updated to their latest secure versions
 - Avoid logging sensitive information in production environments
@@ -104,7 +104,7 @@ Security updates will be released as patch versions and announced through:
 
 ## Security Achievements
 
-debug-fmt maintains enterprise-grade security standards:
+logger-base maintains enterprise-grade security standards:
 
 - ✅ **Zero Known Vulnerabilities**: Clean audit across all dependencies
 - ✅ **Automated Security Validation**: Comprehensive pre-publish security checks
@@ -112,4 +112,4 @@ debug-fmt maintains enterprise-grade security standards:
 - ✅ **Security Documentation**: Complete security policy and procedures
 - ✅ **Community Standards**: Code of conduct and contribution guidelines
 
-Thank you for helping keep debug-fmt secure!
+Thank you for helping keep logger-base secure!

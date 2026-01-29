@@ -1,6 +1,6 @@
 'use strict'
 
-const origDebug = require('debug-glitz')
+const origDebug = require('dev-log-core')
 
 const timeSpan = require('@kikobeats/time-span')
 
