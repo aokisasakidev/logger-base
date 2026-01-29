@@ -5,7 +5,7 @@ declare namespace DebugLogfmt {
   interface DebugOptions {
     /**
      * Custom log levels available.
-     * @default ['info', 'warn', 'error']
+     * @default ['info', 'warn', 'error', 'fatal', 'trace', 'debug']
      */
     levels?: string[]
 
